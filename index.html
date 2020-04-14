@@ -1,1 +1,59 @@
-<h1>Hello!</h1>
+<html>
+	<head>
+		<title>Victor Erickson</title>
+		<script src="particles.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+		<style>
+			* {
+				font-family: 'Open Sans', sans-serif;
+			}
+		</style>
+		<link rel="stylesheet" href="./styling/css.css">
+		<link rel="shortcut icon" type="image/png" href="assets/flavicon.png"/>
+	</head>
+
+	<body>
+		<div id="particles-js"></div>
+		<div id="main">
+			<div id="greetingContainer">
+				<div id="greeting">Hello</div>
+				<div id="name">My name is Victor Erickson</div>
+				<ul id="mainIcons">
+					<li><a href="https://github.com/vericks101" target="_blank"><img src="assets/github-logo.png"/></a></li>
+					<li><a href="https://www.youtube.com/channel/UCJRjtchEF9xdX1KSp5axAIA" target="_blank"><img src="assets/youtube-logo.png"/></a></li>
+					<li><a href="https://www.linkedin.com/in/victor-erickson-57771b15a/" target="_blank"><img src="assets/linkedin-logo.png"/></a></li>
+					<li><a href="mailto:vericks101@gmail.com" target="_top"><img src="assets/email-logo.png"/></a></li>
+				</ul>
+			</div>
+			<div id="introduction">
+				<p>
+					I'm a <span id="age"></span>-year-old, Seattle-born, Asian-American Software Engineer with nerdish tendencies.
+				</p>
+				<p>
+					I'm currently a <b>Nordstrom Software Engineer</b>.
+				</p>
+				<p>
+					I also spend a lot of free time doing <b>Game Development</b> as a hobby.
+					You can find my relevant work at <a href="https://www.google.com" target="_blank"><b>Placeholder</b></a>,
+					a website that holds my game projects.
+				</p>
+			</div>
+			<h2 id="copyright">Copyright &copy; Victor Erickson</h2>
+		</div>
+		<!-- scripts -->
+		<script src="particles.js"></script>
+		<script src="app.js"></script>
+		<script src="main.js"></script>
+		<script>
+			window.onload = () => {
+				document.getElementById('copyright').innerText += ` ${new Date().getFullYear()}`;
+				const birthdate = new Date('10/20/1996');
+				const currentdate = new Date();
+				const age = (currentdate.getTime() - birthdate.getTime()) / (1000 * 3600 * 24 * 365);
+				const actualage = Math.floor(age);
+				document.getElementById('age').innerText = `${actualage}`;
+			};
+		</script>
+	</body>
+</html>
