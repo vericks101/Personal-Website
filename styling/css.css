@@ -48,29 +48,18 @@ p {
   z-index: 1;
   padding: 0;
   top: 20%;
-  left: 0;
-  right: 0;
+  left: 1%;
+  right: 1%;
   margin: 0 auto;
-  width: 355px;
+  width: 320px;
   height: 120px;
-}
-
-#speaker {
-  width: 25px;
-  position: relative;
-  top: 7px;
-  cursor: pointer;
-}
-
-#speaker:hover {
-  transform: scale(1.1);
 }
 
 #greeting {
   position: absolute;
   z-index: 1;
   font-size: 2.5em;
-  left: 0%;
+  left: 1%;
   /*font-family: Helvetica;*/
   font-family: 'Ubuntu', sans-serif;
   /*color: #02203C;*/
@@ -82,13 +71,13 @@ p {
   font-size: 1.25em;
   /*font-family: Helvetica;*/
   top: 40%;
-  right: 0%;
+  left: 19%;
 }
 
 #mainIcons {
   position: absolute;
   bottom: 0%;
-  right: 3%;
+  left: 44%;
   margin: 0;
   padding: 0;
 }
@@ -120,7 +109,7 @@ ul > li > a > img:hover {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 35%;
+  width: 37%;
 }
 
 #introduction > p {
@@ -142,14 +131,4 @@ ul > li > a > img:hover {
 
 figcaption {
   font-size: 14px;
-}
-
-#copyright {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  font-size: 15px;
-  width: 265px;
 }

@@ -9,6 +9,7 @@
 				font-family: 'Open Sans', sans-serif;
 			}
 		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./styling/css.css">
 		<link rel="shortcut icon" type="image/png" href="assets/flavicon.png"/>
 	</head>
@@ -28,18 +29,18 @@
 			</div>
 			<div id="introduction">
 				<p>
-					I'm a <span id="age"></span>-year-old, Seattle-born, Asian-American Software Engineer with nerdish tendencies.
+					I'm a <span id="age"></span>-year-old, Seattle-born, Asian-American Software Engineer that loves to explore
+					and learn new things as often as I can.
 				</p>
 				<p>
 					I'm currently a <b>Nordstrom Software Engineer</b>.
 				</p>
 				<p>
-					I also spend a portion of my free time doing <b>Game Development</b> as a hobby.
-					You can find my relevant work at <a href="https://www.google.com" target="_blank"><b>Placeholder</b></a>,
-					a website that holds a collection of my game projects.
+					I also spend a portion of my free time doing <b>Game Development</b> and other various <b>Software Development Projects</b>
+					as a hobby. You can find my relevant Game Development work at <a href="https://www.google.com" target="_blank"><b>Placeholder</b></a>
+					as well as my other relevant Development Project work at <a href="https://www.google.com" target="_blank"><b>Placeholder</b></a>.
 				</p>
 			</div>
-			<h2 id="copyright">Copyright &copy; Victor Erickson</h2>
 		</div>
 		<!-- scripts -->
 		<script src="particles.js"></script>
@@ -47,7 +48,6 @@
 		<script src="main.js"></script>
 		<script>
 			window.onload = () => {
-				document.getElementById('copyright').innerText += ` ${new Date().getFullYear()}`;
 				const birthdate = new Date('10/20/1996');
 				const currentdate = new Date();
 				const age = (currentdate.getTime() - birthdate.getTime()) / (1000 * 3600 * 24 * 365);
