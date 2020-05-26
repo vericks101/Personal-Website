@@ -14,6 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="./styling/css.css">
 		<link rel="shortcut icon" type="image/png" href="assets/flavicon.png"/>
 	</head>
@@ -40,12 +41,59 @@
 					I'm currently a <b>Nordstrom Software Engineer</b>.
 				</p>
 				<p>
-					I also spend a portion of my free time doing <b>Game Development</b> as a hobby. You can find my relevant work 
-					at <a href="https://www.google.com" target="_blank"><b>Placeholder</b></a>, a website I created to reference and
-					maintain a community for the games that I've created.
+					I also spend a portion of my free time learning and developing using various technology stacks. If you're interested
+					in learning more about some of the recent projects that I've worked on, please feel free to check them out below.
 				</p>
+				<div class="grid-container">
+				<a href="#contentSection"><img src="assets/downward-arrow.png" width="35" height="20"/></a>
+				</div>
 			</div>
 		</div>
+		<div id="grad1"></div>
+		<div class="contentSection" id="contentSection">
+		<div class ="content">
+			<div class="grid-container-left">
+				<div class="grid-item">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title"><b>EKODEX</b></h5>
+							<p class="card-text">
+								Ekodex is a single platform to synchronize the game development projects that I've worked on. The concept
+								is to be able to have a single user account with information, statistics, and experiences obtained that can be 
+								shared across multiple of the titles that I build that should be able to support such a feature. If you're
+								interested in checking out Ekodex for yourself, you can find a link to it through the "Check it Out" button
+								below.
+							</p>
+							<div class="content-badge">
+								<a href="https://reactjs.org/" class="badge badge-dark" target="_blank" rel="noopener noreferrer">React</a>
+								<a href="https://nodejs.org/en/" class="badge badge-dark" target="_blank" rel="noopener noreferrer">Node.js</a>
+								<a href="https://expressjs.com/" class="badge badge-dark" target="_blank" rel="noopener noreferrer">Express</a>
+								<a href="https://www.mongodb.com/" class="badge badge-dark" target="_blank" rel="noopener noreferrer">MongoDB</a>
+								<a href="https://www.netlify.com/" class="badge badge-dark" target="_blank" rel="noopener noreferrer">Netlify</a>
+								<a href="https://www.heroku.com/" class="badge badge-dark" target="_blank" rel="noopener noreferrer">Heroku</a>
+							</div>
+							<a href="https://ekodex.netlify.app/" class="btn btn-outline-dark" role="button" target="_blank" rel="noopener noreferrer">Check it Out</a>
+							<img src="assets/sourcecode-logo.png" width="33" height="25">
+							<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Source code is private">
+								<button type="button" style="pointer-events: none;" class="btn btn-outline-dark" disabled>Source Code</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="card">
+						<img src="assets/Capture.PNG" class="card-img-top">
+					</div>
+				</div>
+			</div>
+		<div class="grid-container">
+			<p>
+				Want to check out more free time projects that I've worked on? Visit my <a href="https://github.com/vericks101" target="_blank"><b>GitHub</b></a> for more.
+			</p>
+		</div>
+	</div>
+	</div>
+	</div>
 		<!-- scripts -->
 		<script src="particles.js"></script>
 		<script src="app.js"></script>
@@ -58,6 +106,11 @@
 				const actualage = Math.floor(age);
 				document.getElementById('age').innerText = `${actualage}`;
 			};
+		</script>
+		<script>
+			$(document).ready(function(){
+			  $('[data-toggle="tooltip"]').tooltip();
+			});
 		</script>
 
 		<!-- Optional JavaScript -->
