@@ -51,26 +51,29 @@ p {
   #greetingContainer {
     position: absolute;
     z-index: 1;
-    padding: 0;
     top: 0%;
     left: 1%;
     right: 1%;
     margin: 0 auto;
     width: 320px;
     height: 120px;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(243, 243, 243, 0.5);
+    padding: 5px;
   } 
 }
 @media (min-width:700px) {
   #greetingContainer {
     position: absolute;
     z-index: 1;
-    padding: 0;
     top: 20%;
     left: 1%;
     right: 1%;
     margin: 0 auto;
     width: 320px;
     height: 120px;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(243, 243, 243, 0.5);
   } 
 }
 
@@ -99,6 +102,7 @@ p {
   left: 44%;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
 }
 
 ul > li {
@@ -155,11 +159,18 @@ a > img:hover {
   }
 }
 
-.contentArrow {
-  text-align: center;
+#introContent {
+  border: 1px solid rgba(0,0,0,.125);
+  background-color: rgba(243, 243, 243, 0.5);
+  padding: 5px;
 }
 
-#introduction > p {
+.contentArrow {
+  text-align: center;
+  padding-top: 5px;
+}
+
+#introContent > p {
   margin-bottom: 20px;
 }
 
