@@ -142,7 +142,6 @@ a > img:hover {
     left: 1%;
     right: 1%;
     margin: 0 auto;
-    /* width: 37%; */
   }
 }
 @media (min-width:700px) {
@@ -154,6 +153,10 @@ a > img:hover {
     margin: 0 auto;
     width: 37%;
   }
+}
+
+.contentArrow {
+  text-align: center;
 }
 
 #introduction > p {
