@@ -81,6 +81,52 @@ p {
   font-family: 'Ubuntu', sans-serif;
 }
 
+@media (min-width:1600px) {
+  #contentHeadingLeft {
+    padding-left: 180px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 2.25em;
+    left: 1%;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #contentHeadingDescLeft {
+    padding-left: 180px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 1.1em;
+    left: 1%;
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+#contentSectionsSpacing {
+  padding: 35px;
+}
+
+@media (max-width:1600px) {
+  #contentHeadingLeft {
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 2.25em;
+    left: 1%;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #contentHeadingDescLeft {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 1.1em;
+    left: 1%;
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
 #name {
   position: absolute;
   z-index: 1;
@@ -206,8 +252,8 @@ figcaption {
   .grid-container-left {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 40px 50px 0px 150px;
-    padding-bottom: 25px;
+    margin: 0px 160px 0px 175px;
+    padding-bottom: 50px;
   }
 
   .card {
@@ -243,8 +289,8 @@ figcaption {
   .grid-container-right {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 40px 50px 0px 150px;
-    padding-bottom: 25px;
+    margin: 0px 160px 0px 175px;
+    padding-bottom: 50px;
   }
 
   .card {
@@ -264,13 +310,6 @@ figcaption {
   grid-template-columns: auto;
   text-align: center;
 }
-
-.grid-item-footer {
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
 
 .card-img, .card-img-top {
   border-top-left-radius: 0px;
