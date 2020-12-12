@@ -336,3 +336,7 @@ figcaption {
 .badge {
   margin-bottom: 7px;
 }
+
+.carousel-control-next, .carousel-control-prev {
+  width: 11%;
+}
